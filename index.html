@@ -6,6 +6,7 @@
   <title>Club Futbol Botons Barcelona | L'Esport del Barri</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <style>
     /* ── RESET ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -345,9 +346,9 @@
       border-radius: .75rem;
       background: var(--green-dim);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1.3rem;
       margin-bottom: .85rem;
     }
+    .acard-icon svg { width: 22px; height: 22px; color: var(--green); }
 
     .acard h4 { font-size: 1rem; font-weight: 700; color: var(--on-light); margin-bottom: .4rem; }
     .acard p  { font-size: .85rem; color: var(--muted-light); line-height: 1.6; font-weight: 300; }
@@ -512,7 +513,8 @@
       padding: 1.25rem;
     }
 
-    .act-ico { font-size: 1.4rem; margin-bottom: .35rem; }
+    .act-ico { margin-bottom: .5rem; }
+    .act-ico svg { width: 22px; height: 22px; color: var(--green); }
 
     .act-txt h4 {
       font-size: 1rem;
@@ -571,7 +573,8 @@
     }
     @media (min-width: 680px) { .comm-card:nth-child(2) { transform: translateY(-1.25rem); } }
 
-    .comm-emoji { font-size: 2.25rem; display: block; margin-bottom: .85rem; }
+    .comm-icon { display: flex; justify-content: center; margin-bottom: 1rem; }
+    .comm-icon svg { width: 44px; height: 44px; color: var(--green); stroke-width: 1.5; }
 
     .comm-card h4 {
       font-size: 1.2rem;
@@ -637,8 +640,8 @@
       background: var(--green-dim);
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
-      font-size: 1.05rem;
     }
+    .info-icon svg { width: 18px; height: 18px; color: var(--green); }
 
     .info-text strong {
       display: block;
@@ -785,22 +788,22 @@
         <div class="about-grid">
           <div class="about-cards">
             <div class="acard">
-              <div class="acard-icon">🎯</div>
+              <div class="acard-icon"><i data-lucide="target"></i></div>
               <h4>Tàctic</h4>
               <p>Posiciona els botons, llegeix el joc del rival i planifica cada jugada com un entrenador real sobre el camp.</p>
             </div>
             <div class="acard">
-              <div class="acard-icon">🖐️</div>
+              <div class="acard-icon"><i data-lucide="hand"></i></div>
               <h4>Tàctil</h4>
               <p>El control del toc, la pressió i el pes del botó marquen la diferència entre un gol i una sortida de banda.</p>
             </div>
             <div class="acard">
-              <div class="acard-icon">👨‍👩‍👧</div>
+              <div class="acard-icon"><i data-lucide="users"></i></div>
               <h4>Intergeneracional</h4>
               <p>El coneixen els avis, l'aprenen els néts. Sense barreres d'edat ni condició física — tots al mateix nivell.</p>
             </div>
             <div class="acard">
-              <div class="acard-icon">🏙️</div>
+              <div class="acard-icon"><i data-lucide="building-2"></i></div>
               <h4>De barri</h4>
               <p>Arrelat a Sant Antoni des de 2013. Un esport de club amb tornejos, comunitat i vida associativa real.</p>
             </div>
@@ -864,7 +867,7 @@
             <div class="act-bg" style="background-image:url('assets/img/img-activitat-club.jpeg');background-position:center 20%"></div>
             <div class="act-fog"></div>
             <div class="act-txt">
-              <div class="act-ico">🏆</div>
+              <div class="act-ico"><i data-lucide="trophy"></i></div>
               <h4>Activitats regulars de club</h4>
               <p>Partides setmanals, lliga interna i entrenaments per a totes les categories.</p>
             </div>
@@ -873,7 +876,7 @@
             <div class="act-bg" style="background-image:url('assets/img/img-taller.jpeg')"></div>
             <div class="act-fog"></div>
             <div class="act-txt">
-              <div class="act-ico">🎓</div>
+              <div class="act-ico"><i data-lucide="graduation-cap"></i></div>
               <h4>Tallers i extraescolars</h4>
               <p>Iniciació per a escoles i centres cívics. Concentració, psicomotricitat i treball en equip.</p>
             </div>
@@ -882,7 +885,7 @@
             <div class="act-bg" style="background-image:url('assets/img/img-demostracio.jpeg');background-position:center top"></div>
             <div class="act-fog"></div>
             <div class="act-txt">
-              <div class="act-ico">🎪</div>
+              <div class="act-ico"><i data-lucide="megaphone"></i></div>
               <h4>Demostracions i exhibicions</h4>
               <p>Presència en festes majors, places i esdeveniments. Joc, participació i espectacle.</p>
             </div>
@@ -891,7 +894,7 @@
             <div class="act-bg" style="background-image:url('assets/img/img-colabs.jpeg');background-position:center 25%"></div>
             <div class="act-fog"></div>
             <div class="act-txt">
-              <div class="act-ico">🤝</div>
+              <div class="act-ico"><i data-lucide="handshake"></i></div>
               <h4>Col·laboracions</h4>
               <p>Treballem amb entitats, AMPAs, associacions de veïns i casals. Fem propostes a mida.</p>
             </div>
@@ -910,17 +913,17 @@
         <p class="comm-sub">No cal ser esportista. No cal experiència prèvia. Cal tenir ganes.</p>
         <div class="comm-cards">
           <div class="comm-card">
-            <span class="comm-emoji">🧒</span>
+            <div class="comm-icon"><i data-lucide="baby"></i></div>
             <h4>Infants</h4>
             <p>Secció infantil pròpia. Aprenen el joc des de petits, desarrollen la concentració, la psicomotricitat fina i el pensament tàctic. Ideal a partir dels 6 anys.</p>
           </div>
           <div class="comm-card">
-            <span class="comm-emoji">🏅</span>
+            <div class="comm-icon"><i data-lucide="user-round"></i></div>
             <h4>Adults</h4>
             <p>Lliga interna, tornejos i partides setmanals. El club com a espai de competició real, comunitat i desconnexió.</p>
           </div>
           <div class="comm-card">
-            <span class="comm-emoji">☀️</span>
+            <div class="comm-icon"><i data-lucide="sunrise"></i></div>
             <h4>Jubilats</h4>
             <p>Sessions matinals exclusives i participació plena en la lliga i tornejos del club, competint en igualtat amb els adults. El futbol de botons no entén d'edat.</p>
           </div>
@@ -948,21 +951,21 @@
             <h2 class="contact-h2">Vine a<br>provar-ho</h2>
             <div class="info-items">
               <div class="info-item">
-                <div class="info-icon">📍</div>
+                <div class="info-icon"><i data-lucide="map-pin"></i></div>
                 <div class="info-text">
                   <strong>On som</strong>
                   <span>Racó de Cultura de Sant Antoni<br>Carrer Viladomat 75, baixos<br>08015 Barcelona</span>
                 </div>
               </div>
               <div class="info-item">
-                <div class="info-icon">✉️</div>
+                <div class="info-icon"><i data-lucide="mail"></i></div>
                 <div class="info-text">
                   <strong>Escriu-nos</strong>
                   <span><a href="mailto:contacte.cfbb@gmail.com">contacte.cfbb@gmail.com</a></span>
                 </div>
               </div>
               <div class="info-item">
-                <div class="info-icon">🗓️</div>
+                <div class="info-icon"><i data-lucide="calendar"></i></div>
                 <div class="info-text">
                   <strong>Vine a veure'ns</strong>
                   <span>Escriu-nos i t'expliquem quan és la propera sessió oberta. L'entrada és lliure.</span>
@@ -1027,6 +1030,9 @@
       }
     });
   });
+
+  /* ── Lucide icons ── */
+  lucide.createIcons();
 
 }());
 </script>
