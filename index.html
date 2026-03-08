@@ -376,6 +376,7 @@
       align-items: center;
     }
     @media (min-width: 820px) { .club-grid { grid-template-columns: 1fr 1fr; } }
+    .club-grid > * { min-width: 0; max-width: 100%; }
 
     .club-photo-wrap { position: relative; }
 
@@ -708,6 +709,8 @@
       body { overflow: auto; }
       main { height: auto; overflow-y: auto; scroll-snap-type: none; }
       section { min-height: auto; padding-bottom: 3rem; }
+      .club-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .5rem; text-align: center; }
+      .stat-num { font-size: 1.3rem; }
     }
   </style>
 </head>
@@ -717,7 +720,7 @@
 <header>
   <div class="hdr-inner">
     <a class="logo-link" href="#hero">
-      <img src="assets/img/logo-cfbb-negre-fons-blanc.png" alt="Logo CFBB">
+      <img src="assets/img/logo-cfbb-negre-fons-blanc-min.png" alt="Logo CFBB">
       <span>CFBB</span>
     </a>
     <nav>
@@ -988,7 +991,7 @@
 
         <footer class="site-footer">
           <div class="ftr-logo">
-            <img src="assets/img/logo-cfbb-negre-fons-blanc.png" alt="CFBB">
+            <img src="assets/img/logo-cfbb-negre-fons-blanc-min.png" alt="CFBB">
             <span class="ftr-copy">© 2026 Club Futbol Botons Barcelona. Tots els drets reservats.</span>
           </div>
           <div class="ftr-links">
