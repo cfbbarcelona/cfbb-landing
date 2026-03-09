@@ -627,7 +627,7 @@
       gap: 3rem;
       align-items: start;
     }
-    @media (min-width: 820px) { .contact-grid { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 820px) { .contact-grid { grid-template-columns: 1fr 1fr; align-items: stretch; } }
 
     .contact-h2 {
       font-size: clamp(2rem, 5vw, 3.25rem);
@@ -640,7 +640,7 @@
 
     .info-items { display: flex; flex-direction: column; gap: 1.4rem; }
 
-    .info-item { display: flex; align-items: flex-start; gap: 1rem; }
+    .info-item { display: flex; align-items: center; gap: 1rem; }
 
     .info-icon {
       width: 42px; height: 42px;
@@ -678,6 +678,9 @@
       border: 1px solid rgba(255,255,255,.07);
       aspect-ratio: 4/3;
       background: var(--dark-mid);
+    }
+    @media (min-width: 820px) {
+      .map-wrap { aspect-ratio: unset; height: 100%; min-height: 300px; }
     }
     .map-wrap iframe {
       width: 100%;
@@ -726,7 +729,9 @@
   <div class="hdr-inner">
     <a class="logo-link" href="#hero">
       <img src="assets/img/logo-cfbb-negre-fons-blanc-min.png" alt="Logo CFBB">
-      <span>CFBB</span>
+      <span>Club Futbol Botons 
+        <span style="color: var(--green);display: inline;">Barcelona</span>
+      </span>
     </a>
     <nav>
       <a href="#about">L'Esport</a>
@@ -843,7 +848,7 @@
             <div class="label">La Nostra Història</div>
             <h2 class="club-h2">Arrels a Barcelona,<br>esperit de barri</h2>
             <p>Som el Club Futbol Botons Barcelona, una entitat amb llarga trajectòria vinculada al barri de Sant Antoni. Promovem i practiquem aquest esport tradicional amb passió, fomentant el respecte, la comunitat i el joc net.</p>
-            <p>Tenim secció infantil i sènior, participem en tornejos i organitzem activitats obertes al barri. No som un club esportiu qualsevol — som un punt de trobada per a veïns de totes les edats.</p>
+            <p>Tenim secció infantil i sènior, participem en tornejos i organitzem activitats obertes al barri. No som un club esportiu qualsevol, som un punt de trobada per a veïns de totes les edats.</p>
             <div class="club-stats">
               <div>
                 <div class="stat-num">Sènior</div>
@@ -869,21 +874,21 @@
     <div class="acts-body">
       <div class="wrap">
         <div class="acts-hdr">
-          <h2 class="acts-h2">Què podem fer com a club</h2>
-          <p class="acts-sub">Des de la partida setmanal fins a la demostració a la festa major — tenim una proposta per a cada ocasió.</p>
+          <h2 class="acts-h2">Què fem com a club</h2>
+          <p class="acts-sub">Des del partit setmanal fins a la demostració a la festa major, tenim una proposta per a cada ocasió.</p>
         </div>
         <div class="acts-grid">
           <div class="act-card">
-            <div class="act-bg" style="background-image:url('assets/img/img-activitat-club.jpeg');background-position:center 20%"></div>
+            <div class="act-bg" style="background-image:url('assets/img/img-activitat-club.jpeg');background-position:center 15%"></div>
             <div class="act-fog"></div>
             <div class="act-txt">
               <div class="act-ico"><i data-lucide="trophy"></i></div>
               <h4>Activitats regulars de club</h4>
-              <p>Partides setmanals, lliga interna i entrenaments per a totes les categories.</p>
+              <p>Lliga interna, partits setmanals, i entrenaments per a totes les categories.</p>
             </div>
           </div>
           <div class="act-card">
-            <div class="act-bg" style="background-image:url('assets/img/img-taller.jpeg')"></div>
+            <div class="act-bg" style="background-image:url('assets/img/img-taller.jpeg'); background-position: center bottom;"></div>
             <div class="act-fog"></div>
             <div class="act-txt">
               <div class="act-ico"><i data-lucide="graduation-cap"></i></div>
@@ -892,7 +897,7 @@
             </div>
           </div>
           <div class="act-card">
-            <div class="act-bg" style="background-image:url('assets/img/img-demostracio.jpeg');background-position:center top"></div>
+            <div class="act-bg" style="background-image:url('assets/img/img-demostracio.jpeg');background-position:center"></div>
             <div class="act-fog"></div>
             <div class="act-txt">
               <div class="act-ico"><i data-lucide="megaphone"></i></div>
@@ -925,17 +930,17 @@
           <div class="comm-card">
             <div class="comm-icon"><i data-lucide="baby"></i></div>
             <h4>Infants</h4>
-            <p>Secció infantil pròpia. Aprenen el joc des de petits, desarrollen la concentració, la psicomotricitat fina i el pensament tàctic. Ideal a partir dels 6 anys.</p>
+            <p>Secció infantil pròpia. Aprenen el joc des de petits, treballen la concentració, la psicomotricitat fina i el pensament tàctic. <br/>Ideal a partir dels 6 anys.</p>
           </div>
           <div class="comm-card">
             <div class="comm-icon"><i data-lucide="user-round"></i></div>
             <h4>Adults</h4>
-            <p>Lliga interna, tornejos i partides setmanals. El club com a espai de competició real, comunitat i desconnexió.</p>
+            <p>Lliga interna, tornejos i partits setmanals. El club com a espai de competició real, comunitat i desconnexió.</p>
           </div>
           <div class="comm-card">
             <div class="comm-icon"><i data-lucide="sunrise"></i></div>
-            <h4>Jubilats</h4>
-            <p>Sessions matinals exclusives i participació plena en la lliga i tornejos del club, competint en igualtat amb els adults. El futbol de botons no entén d'edat.</p>
+            <h4>Veterans</h4>
+            <p>També hi ha vida al club als matins: una altra franja per venir a jugar, compartir afició i sumar més estones de futbol amb botons.</p>
           </div>
         </div>
         <div class="comm-tags">
@@ -978,7 +983,7 @@
                 <div class="info-icon"><i data-lucide="calendar"></i></div>
                 <div class="info-text">
                   <strong>Vine a veure'ns</strong>
-                  <span>Escriu-nos i t'expliquem quan és la propera sessió oberta. L'entrada és lliure.</span>
+                  <span>Estem cada setmana les tardes dels dijous, de 17 h a 20 h, i cada 15 dies els dilluns (de 18 h a 19.30 h) i els dimecres de 10 h a 14 h. L'entrada és lliure.</span>
                 </div>
               </div>
             </div>
