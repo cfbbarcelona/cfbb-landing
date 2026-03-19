@@ -84,14 +84,13 @@
       width: auto;
     }
 
-    .logo-link span {
-      color: #fff;
-      font-weight: 700;
-      font-size: 0.9rem;
-      display: none;
+    .logo-name { color: #fff; font-weight: 700; font-size: 0.9rem; }
+    .logo-bcn  { color: var(--green); }
+    .logo-long { display: none; }
+    @media (min-width: 560px) {
+      .logo-short { display: none; }
+      .logo-long  { display: inline; }
     }
-
-    @media (min-width: 560px) { .logo-link span { display: block; } }
 
     nav { display: none; align-items: center; gap: 1.75rem; }
     @media (min-width: 820px) { nav { display: flex; } }
@@ -730,8 +729,9 @@
   <div class="hdr-inner">
     <a class="logo-link" href="#hero">
       <img src="assets/img/logo-cfbb-negre-fons-blanc-min.png" alt="Logo CFBB">
-      <span>Club Futbol Botons 
-        <span style="color: var(--green);display: inline;">Barcelona</span>
+      <span class="logo-name">
+        <span class="logo-short">CFB <span class="logo-bcn">Barcelona</span></span>
+        <span class="logo-long">Club Futbol Botons <span class="logo-bcn">Barcelona</span></span>
       </span>
     </a>
     <nav>
